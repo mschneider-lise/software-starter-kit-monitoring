@@ -15,12 +15,13 @@ Stellt in der Spring Boot App folgende Endpunkte bereit:
 3. `/custom-counter` -> Lässt einen Counter hochzählen, den ihr vorher selber registrieren müsst.
 
 ## Grafana
-Erstellt ein neues Grafana Dashboard:
-1. Erstellt eine Visualisierung für CPU und RAM Verbrauch (entweder von der Node oder der Spring Boot App).
-2. Erstellt eine Visualisierung, aus der Informationen über die Endpunkte der Spring Boot App ersichtlich sind (z.B. Response Time, Requests per Second oder Gesamtanzahl Aufrufe im Intervall).
-3. Erstellt eine Visualisierung für den Verlauf eures Custom Counters.
-4. Erstellt eine Visualisierung für Log-Einträge der Spring Boot App. Passt die Visualisierung so an (oder erstellt eine Kopie), dass nur Log-Einträge angezeigt werden, die vom Log-Level "Error" sind.
-5. (Bonus) Filtert die Logs über die Eingabe der Trace Id
+Erstellt ein neues Grafana Dashboard und folgende Visualisierungen:
+1. CPU und RAM Verbrauch (entweder von der Node oder der Spring Boot App).
+2. "Up"-Status der Spring Boot App.
+3. Informationen über die Endpunkte der Spring Boot App (z.B. Response Time, Requests per Second oder Gesamtanzahl Aufrufe im Intervall).
+4. Verlauf eures Custom Counters.
+5. Log-Einträge der Spring Boot App. Passt die Visualisierung so an (oder erstellt eine Kopie), dass nur Log-Einträge angezeigt werden, die vom Log-Level "Error" sind.
+6. (Bonus) Filtert die Logs über die Eingabe der Trace Id
 
 ## Alerts
 1. Erstellt einen Alert für den Custom Counter, der ab einem bestimmten Grenzwert feuert
