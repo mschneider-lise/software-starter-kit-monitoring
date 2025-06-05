@@ -16,6 +16,6 @@ public class CustomControllerAdvice {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(Exception.class)
     public void handleException(Exception e) {
-        LOG.atError().addKeyValue("trace_id", UUID.randomUUID().toString()).log(e.getMessage());
+        LOG.atError().addKeyValue("error_code", 500).addKeyValue("trace_id", UUID.randomUUID().toString()).setCause(e).log(e.getMessage());
     }
 }
