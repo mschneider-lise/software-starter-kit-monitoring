@@ -11,7 +11,7 @@
 Stellt in der Spring Boot App folgende Endpunkte bereit:
 
 1. `/info` -> Erzeugt einen Log-Eintrag mit Level "Info".
-2. `/error` -> Wirft eine Exception, die über ein ControllerAdvice gefangen und geloggt wird. Reichert den Log-Eintrag um eine Trace Id (UUID) an.
+2. `/error` -> Wirft eine Exception, die über ein ControllerAdvice gefangen und geloggt wird. Reichert den Log-Eintrag um einen festen "Error Code" und eine dynamische "Trace Id" (UUID) an.
 3. `/custom-counter` -> Lässt einen Counter hochzählen, den ihr vorher selber registrieren müsst.
 
 ## Grafana
