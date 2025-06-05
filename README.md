@@ -4,5 +4,6 @@
 * Prometheus: http://localhost:9090
 * Node exporter: http://localhost:9100/metrics
 * Loki: http://localhost:3100/ready
+* Alloy: http://localhost:12345
 * Grafa: http://localhost:3000
   * Credentials: admin:admin123
